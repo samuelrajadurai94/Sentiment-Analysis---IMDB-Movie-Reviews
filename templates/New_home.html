@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sentiment Checker</title>
+    <style>
+        body {
+            background-color: powderblue;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            background-color: orange;
+            text-align: center;
+            padding: 20px;
+        }
+        form {
+            text-align: center;
+        }
+        input[type="text"] {
+            width: 600px;
+            height: 60px;
+            margin-bottom: 20px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+        }
+        p {
+            font-size: 48px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="{{ url_for('predict') }}" method="POST">
+        <h1>Check Sentiment Value for Movie Review</h1>
+        <p>Review <input type="text" name="review" /></p>
+        <p><input type="submit" value="Check Sentiment" /></p>
+        <p>
+            &#128512; &#128516; &#128517; &#128514;
+        </p>
+    </form>
+</body>
+</html>
+

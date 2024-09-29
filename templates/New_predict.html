@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sentiment Analyzer Output</title>
+    <style>
+        body {
+            background-color: powderblue;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center; /* Center text in table cells */
+        }
+        th, td {
+            background-color: #ffa500;
+            padding: 10px;
+        }
+        h2 {
+            background-color: orange;
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            margin-top: 20px;
+        }
+        p {
+            font-size: 48px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Sentiment Analyzer Engine Output</h2>
+    <table style="width: 50%;"> <!-- Adjust width to 50% for better centering -->
+        <tr>
+            <th>Prediction Label</th>
+            <th>Sentiment</th>
+        </tr>
+        <tr>
+            <td>{{pred}}</td>
+            <td>{{sent}}</td>
+        </tr>
+    </table>
+    <p>
+        &#128512; &#128516; &#128517; &#128514;
+    </p>
+    <p>
+        <button onclick="history.back()">Go Back</button>
+    </p>
+</body>
+</html>
+
+ 
